@@ -39,10 +39,10 @@
         <h2>Introduction & Problem Statement</h2>
         <p>
 In today’s fast-paced e-commerce world, providing relevant and personalized search results is crucial for keeping customers engaged and driving sales. Platforms like Amazon typically use advanced machine learning models trained on large amounts of historical data—such as user interactions, purchase histories, and product details—to rank and recommend products. These models perform well for common queries and popular items but can struggle when faced with diverse and changing user search behaviors. </p> <p>
-One limitation is that traditional methods for generating training queries often produce synthetic queries that are too similar to existing product descriptions. This lack of variety makes it harder for relevance classifiers to learn how to handle the wide range of real user queries, which can reduce the effectiveness of search results.
+A key drawback of traditional query generation methods is that the synthetic queries often sound too much like the product descriptions themselves.This lack of variety makes it harder for relevance classifiers to learn how to handle the wide range of real user queries, which can reduce the effectiveness of search results.
 Another important factor is ranking products not just based on how well they match a search query but also by their significance within a network of related products, user actions, and purchase patterns. Network-based algorithms like <a href="algorithms.html" style="font-weight:bold;">page rank </a>can identify these connections and help highlight products that are more influential or relevant. Combining these graph-based techniques with machine learning models can lead to better search outcomes.
 A common challenge across e-commerce platforms is the cold start problem—how to deliver relevant results for new products or rare queries when there is little to no historical data available. Since traditional ranking models rely heavily on past user behavior, they often struggle in these situations.
-Addressing these challenges involves using<b> adversarial reinforcement learning (RL) </b>to generate a broader range of challenging search queries, which helps train more robust relevance classifiers. Along with a PageRank-inspired approach that takes into account product network influence, this method can improve the quality of search results, especially for new or less frequently searched products. This, in turn, enhances the overall user experience and can increase conversion rates on platforms like Amazon.
+Addressing these challenges involves using<b> adversarial reinforcement learning (RL) </b>to generate a broader range of challenging search queries, which helps train more robust relevance classifiers. Along with a <a href="algorithms.html" style="font-weight:bold;">page rank </a>-inspired approach that takes into account product network influence, this method can improve the quality of search results, especially for new or less frequently searched products. This, in turn, enhances the overall user experience and can increase conversion rates on platforms like Amazon.
 </p>
 
         </p>
@@ -162,7 +162,7 @@ Example: <br>
       <h3>Step 7:</h3>
  <p><b>Apply Time-Decayed Personalized PageRank  </b>
      <ul> 
-<li>Run PageRank starting from products recently clicked by the user. </li> 
+<li>Run <a href="algorithms.html" style="font-weight:bold;">page rank </a> starting from products recently clicked by the user. </li> 
 <li>Add time-decay factor so newer interactions matter more. </li>
 <li>Result: An influence score for each product based on its importance in the interaction network. </li> </ul>
  </p>
@@ -223,8 +223,7 @@ Visibility for new products through metadata-based boosts</li>
 <li>Classifier finds highly relevant matches: “Sony WH-1000XM5”, “Bose QuietComfort 45”</li> 
 <li>PageRank boosts “AirPods Max” based on high co-click centrality 
 </li>
-<li>PageRank boosts “AirPods Max” based on high co-click centrality 
-</li>
+
 <li>A new brand “Infinity Glide 4000” appears due to metadata-based cold-start edge </li>
  </ul>
 <p><b> <br> Ranked Results: </b> </p>
