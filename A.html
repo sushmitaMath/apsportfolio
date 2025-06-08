@@ -17,7 +17,7 @@
         <li><a href="#objectives">Objectives</a></li>
         <li><a href="#solution">Solution</a></li>
         <li><a href="#impact">Impact</a></li>
-        <li><a href="#future">Future</a></li>
+
         <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </div>
@@ -61,7 +61,7 @@ Combining order clustering, smart vehicle assignment, detailed routing, and mach
   <div class="card">
     <h2>Proposed Solution</h2>
     <p>
-      To proactively prevent counterfeit products on Amazon, the proposed system leverages advanced AI-powered techniques to automatically verify new sellers and their product listings before they are published. This approach reduces reliance on reactive reporting and manual intervention by brands and customers, enabling faster detection and blocking of counterfeit items. The system integrates image similarity matching, seller behavior analysis, and automated decision-making to maintain the integrity of Amazon’s marketplace.
+    To build an efficient, scalable delivery system, we start by capturing real-time order data and organizing it through geographic clustering. We match these clusters to vehicles using optimization techniques that respect delivery windows and capacity limits. Routes within each cluster are planned using A* search, accounting for traffic and road constraints. Machine learning models help forecast demand and traffic to guide planning. For large-scale problems, metaheuristics like Genetic Algorithms are used to improve performance without sacrificing speed. The system integrates real-time data for dynamic re-routing and is deployed using a modular, cloud-based architecture. Continuous feedback and data-driven tuning help us improve efficiency, reduce delays, and scale with demand.
     </p>
 
     <div style="background-color: #f9fafb; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px;">
@@ -256,32 +256,22 @@ Combining order clustering, smart vehicle assignment, detailed routing, and mach
       <div class="card">
         <h2>Business Impact</h2>
         <ul class="grid-list">
-          <li>Blocks counterfeit listings before they go live, rather than reacting after customer or brand reports.h</li>
-          <li>Strengthens customer trust by ensuring only authentic products appear on the platform.</li>
-          <li>Protects the reputation of top brands by proactively filtering fake listings.</li>
-          <li>Minimizes revenue loss caused by fraud and returns linked to counterfeit items.</li>
-<li>Speeds up the verification process for genuine sellers, improving onboarding. </li>
-<li> Enhances the overall integrity and credibility of Amazon’s marketplace.</li>
+          <li>Real-time re-routing and traffic-aware planning improve delivery speed.</li>
+          <li> Efficient clustering and routing reduce fuel usage and driver time.</li>
+          <li> Continuous learning from real-time and historical data boosts performance.
+
+</li>
+    
         </ul>
       </div>
     </section>
 
-    <section id="future" class="section">
-      <div class="card">
-        <h2>Future Implications</h2>
-        <ul class="grid-list">
-          <li>Integrate <b>natural language generation (NLG) models</b> to automatically generate alerts and detailed reports for manual reviewers, speeding up the review process.</li>
-          <li>Incorporate real-time price anomaly detection using market trend data to more accurately flag suspiciously low-priced listings.</li>
-          <li>Expand image verification to include 3D model analysis and video content checks for products with multimedia listings.</li>
-        </ul>
-      </div>
-    </section>
 
     <section id="conclusion" class="section alt-bg">
       <div class="card">
         <h2>Conclusion</h2>
         <p>
-          This system offers a proactive and effective approach to tackling counterfeit products on Amazon. It effectively addresses the limitations of current reactive approaches. By combining AI-driven image and text verification with seller behavior analysis, this solution will help restore buyer confidence, safeguard Amazon’s marketplace integrity, and ultimately drive sustainable business growth.
+          The proposed system combines real-time data, machine learning, and intelligent optimization to streamline last-mile delivery. It reduces costs, improves delivery speed and accuracy, and scales efficiently—driving better customer experience and stronger business performance.
         </p>
         <a class="download-btn" href="./docs/A.pdf" download>Download PDF</a>
       </div>
